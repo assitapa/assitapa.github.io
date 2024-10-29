@@ -32,15 +32,21 @@ footer, header, hgroup, menu, nav, section {
 #avatar {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
 #avatar img {
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
+	width: 350px;
+	height: 350px;
 	object-fit: cover;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tool-icon{
+	color: #4e5559;
+	margin-inline: 4px;
+
 }
 
 body {
