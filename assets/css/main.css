@@ -29,6 +29,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+#avatar {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#avatar img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 body {
 	line-height: 1;
 }
