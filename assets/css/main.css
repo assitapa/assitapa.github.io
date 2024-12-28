@@ -4707,3 +4707,156 @@ input, select, textarea {
 		}
 
 	}
+
+	.slideshow-container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+	}
+	
+	.mySlides {
+		display: none;
+	}
+	
+	.fade {
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+	
+	@keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+	}
+
+	/* Add this to your CSS */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2em;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 736px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tech-stack {
+    margin: 2em 0;
+    font-size: 2em;
+}
+
+.tool-icon {
+    margin: 0 0.5em;
+    transition: transform 0.2s;
+}
+
+.tool-icon:hover {
+    transform: scale(1.2);
+}
+
+.project-section {
+    margin: 4em 0;
+}
+
+.implementation-details h3 {
+    margin-top: 2em;
+}
+
+.project-links {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.project-links .button {
+    margin: 0 1em;
+}
+
+.presentation-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 2em;
+}
+
+.presentation-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.project-list {
+    margin-left: 2em;
+    list-style-type: disc;
+    margin-bottom: 1.5em;
+}
+
+.project-list li {
+    margin-bottom: 0.8em;
+    line-height: 1.6;
+}
+
+/* Optional: Compact variant for tighter lists */
+.project-list--compact li {
+    margin-bottom: 0.5em;
+}
+
+/* Add to your main.css */
+.toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    z-index: 1000;
+    animation: slideUp 0.5s ease-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.toast-message {
+    font-size: 1rem;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+}

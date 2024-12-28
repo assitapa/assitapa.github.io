@@ -256,3 +256,7 @@
 		}
 
 })(jQuery);
+
+function closeToast() {
+    document.getElementById('toast').style.display = 'none';
+}
