@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Azure Document Management Project | Abhi Sitapara</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/13740b3a4c.js"
+      crossorigin="anonymous"
+    ></script>
+    <noscript
+      ><link rel="stylesheet" href="../assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a href="../index.html" class="logo">Back to Projects</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="../index.html">Projects</a></li>
+          <li><a href="../aboutme.html">About Me</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/abhi-sitapara/"
+              class="icon brands fa-linkedin"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/assitapa" class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Project Header -->
+        <section class="post">
+          <header class="major">
+            <span class="date">January 16, 2025</span>
+            <h1>Intelligent Document Management with Azure</h1>
+            <div class="tech-stack">
+              <i class="fa-solid fa-cloud tool-icon" title="Cloud"></i>
+              <i class="fa-brands fa-python tool-icon" title="Python"></i>
+            </div>
+          </header>
+
+          <!-- Project Overview -->
+          <div class="project-section">
+            <h2>Project Overview</h2>
+            <p>
+              At Sangam Supermarket and Wholesale, I created a set of Python
+              scripts to run locally on an on-premise server to automatically
+              organize invoices and bills in their Google Drive. Recently, I
+              converted this solution into a serverless function in Azure to
+              explore the platform further. The new solution leverages Azure
+              Functions, Blob Storage, and App Insights to automate the
+              organization of invoices.
+            </p>
+
+            <!-- Project Demo/Screenshot -->
+            <div class="image main">
+              <video
+                width="100%"
+                controls
+                preload="auto"
+                poster="../images/thumbnails/azure-project.png"
+              >
+                <source src="../videos/azure-demo-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <!-- Problem & Solution -->
+          <div class="project-section">
+            <h2>Problem Statement</h2>
+            <p>
+              The manual process of organizing invoices and bills was
+              time-consuming and prone to errors. Staff had to manually sort and
+              rename files, which was inefficient and led to difficulties in
+              finding specific documents.
+            </p>
+
+            <h2>Solution Approach</h2>
+            <p>
+              To address this, I developed a serverless function in Azure that
+              automates the organization of invoices. The function uses the
+              Google Drive API to retrieve files from a specific folder and
+              leverages OpenAI's GPT-4o-mini to read the invoices and determine
+              the vendor and date. The function then renames the files, creates
+              necessary folders, and updates a vendor list stored in Azure Blob
+              Storage as a JSON file.
+            </p>
+          </div>
+
+          <!-- Technical Implementation -->
+          <div class="project-section">
+            <h2>Technical Implementation</h2>
+            <div class="implementation-details">
+              <h3>Architecture</h3>
+              <p>
+                The solution consists of Azure Functions for processing, Blob
+                Storage for storing organized files and vendor lists, and App
+                Insights for monitoring and logging. The function is triggered
+                by new files in the Google Drive folder, processes the files
+                using Python and OpenAI's API, and updates the Blob Storage
+                accordingly.
+              </p>
+
+              <h3>Key Features</h3>
+              <ul class="project-list">
+                <li>
+                  Automated file retrieval and processing using Google Drive API
+                </li>
+                <li>
+                  Intelligent document classification with OpenAI's GPT-4o-mini
+                </li>
+                <li>Dynamic file renaming and folder creation</li>
+                <li>Real-time updates to vendor list in Azure Blob Storage</li>
+                <li>Comprehensive monitoring and logging with App Insights</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Results & Impact -->
+          <div class="project-section">
+            <h2>Results & Impact</h2>
+            <ul class="project-list">
+              <li>
+                <strong>Time Efficiency:</strong> The solution dramatically
+                reduced the time required to organize invoices, allowing staff
+                to focus on more strategic tasks.
+              </li>
+              <li>
+                <strong>Improved Accuracy:</strong> Automated processing reduced
+                errors and ensured consistent organization of documents.
+              </li>
+              <li>
+                <strong>Enhanced Workflow:</strong> Staff can now simply scan or
+                drop an invoice into Google Drive, and the system automatically
+                organizes it in the correct location.
+              </li>
+              <li>
+                <strong>Scalability:</strong> The serverless architecture allows
+                for easy scaling as the volume of invoices increases.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Key Learnings -->
+          <div class="project-section">
+            <h2>Key Learnings</h2>
+            <ul class="project-list">
+              <li>
+                <strong>The Importance of Automation:</strong> Automating
+                repetitive tasks can significantly improve efficiency and
+                accuracy.
+              </li>
+              <li>
+                <strong>User-Centered Design:</strong> Tailoring solutions to
+                the user's needs ensures better adoption and satisfaction.
+              </li>
+              <li>
+                <strong>Cloud Platforms:</strong> Exploring Azure's serverless
+                capabilities provided valuable insights into cloud-based
+                automation and scalability.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Project Links -->
+          <div class="project-links">
+            <a href="https://github.com/assitapa/azure-invoice-sorter" class="button primary large">View on GitHub</a>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:abhi758864@gmail.com">abhi758864@gmail.com</a>
+            </p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/abhi-sitapara/"
+                  class="icon brands alt fa-linkedin"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/assitapa"
+                  class="icon brands alt fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
